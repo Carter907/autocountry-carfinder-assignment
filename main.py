@@ -29,8 +29,14 @@ while (True):
         vehicle_name = input(f'Please Enter the full Vehicle name you would like to add:')
         AllowedVehiclesList.append(vehicle_name);
         print(f'You have added "{vehicle_name}" as an authorized vehicle')
-
     elif (decision == '4'):
+        vehicle_name = input(f'Please Enter the full Vehicle name you would like to REMOVE:')
+        choice = input(f'Are you sure you want to remove "{vehicle_name}" from the Authorized Vehicles List?')
+        if choice == 'yes':
+            AllowedVehiclesList.remove(vehicle_name)
+            print(f'You have REMOVED "{vehicle_name}" as an authorized vehicle')
+            
+    elif (decision == '5'):
         print('Thank you for using the AutoCountry Vehicle Finder, good-bye!')
         break;
 
