@@ -1,4 +1,4 @@
-AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan' ]
+AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan', 'Rivian R1T', 'Ram 1500 ]
 
 PROMPT = """********************************
 AutoCountry Vehicle Finder v0.2
@@ -26,12 +26,12 @@ while (True):
         else:
             print(f'{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again')
     elif (decision == '3'):
-        vehicle_name = input(f'Please Enter the full Vehicle name you would like to add:')
+        vehicle_name = input(f'Please Enter the full Vehicle name you would like to ADD:\n')
         AllowedVehiclesList.append(vehicle_name);
         print(f'You have added "{vehicle_name}" as an authorized vehicle')
     elif (decision == '4'):
-        vehicle_name = input(f'Please Enter the full Vehicle name you would like to REMOVE:')
-        choice = input(f'Are you sure you want to remove "{vehicle_name}" from the Authorized Vehicles List?')
+        vehicle_name = input(f'Please Enter the full Vehicle name you would like to REMOVE:\n')
+        choice = input(f'Are you sure you want to remove "{vehicle_name}" from the Authorized Vehicles List?\n')
         if choice == 'yes':
             AllowedVehiclesList.remove(vehicle_name)
             print(f'You have REMOVED "{vehicle_name}" as an authorized vehicle')
