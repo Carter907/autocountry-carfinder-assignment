@@ -1,4 +1,4 @@
-AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan', 'Rivian R1T', 'Ram 1500 ]
+AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan', 'Rivian R1T', 'Ram 1500' ]
 
 PROMPT = """********************************
 AutoCountry Vehicle Finder v0.2
@@ -8,7 +8,8 @@ Please Enter the following number below from the following menu:
 1. PRINT all Authorized Vehicles
 2. SEARCH for Authorized Vehicles
 3. ADD Authorized Vehicle
-4. Exit
+4. REMOVE Authorized Vehicle 
+5. Exit
 """
 VEHICLE_SEARCH_PROMPT = """********************************
 Please enter the full vehicle name:"""
