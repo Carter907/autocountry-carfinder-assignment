@@ -7,7 +7,8 @@ Please Enter the following number below from the following menu:
 
 1. PRINT all Authorized Vehicles
 2. SEARCH for Authorized Vehicles
-3. Exit
+3. ADD Authorized Vehicle
+4. Exit
 """
 VEHICLE_SEARCH_PROMPT = """********************************
 Please enter the full vehicle name:"""
@@ -24,8 +25,12 @@ while (True):
             print(f'{vehicle_name} is an authorized vehicle')
         else:
             print(f'{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again')
-
     elif (decision == '3'):
+        vehicle_name = input(f'Please Enter the full Vehicle name you would like to add:')
+        AllowedVehiclesList.append(vehicle_name);
+        print(f'You have added "{vehicle_name}" as an authorized vehicle')
+
+    elif (decision == '4'):
         print('Thank you for using the AutoCountry Vehicle Finder, good-bye!')
         break;
 
